@@ -1,0 +1,20 @@
+:root{--card:#2b2019;--ink:#f3ecdf;--dim:#bdb3c0;--brass:#d9b25f;--line:#5a4838}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--card:#f6efe0;--ink:#241b25;--dim:#5e5262;--brass:#8a6420;--line:#d3c8b8}}
+:root[data-theme="dark"]{--card:#2b2019;--ink:#f3ecdf;--dim:#bdb3c0;--brass:#d9b25f;--line:#5a4838}
+html,body{height:100%;margin:0;background:#120c08;overflow:hidden;font:400 16px/1.55 "Work Sans",system-ui,sans-serif;color:#f3ecdf}
+canvas#c{position:fixed;inset:0;width:100%;height:100%;display:block;touch-action:none}
+.ov{position:fixed;display:none}
+#hud{left:14px;top:calc(env(safe-area-inset-top,0px) + 12px);background:rgba(18,11,7,.7);border:1px solid #5a4838;border-radius:10px;padding:8px 14px;max-width:60%}
+#hud b{font:700 1.2rem "Cormorant Garamond",Georgia,serif;display:block}#hud span{font-size:.85rem;color:#bdb3c0}
+#map{right:14px;top:calc(env(safe-area-inset-top,0px) + 12px);border:1px solid #5a4838;border-radius:8px;background:rgba(18,11,7,.7)}
+#cross{left:50%;top:50%;width:14px;height:14px;margin:-7px;border:1px solid rgba(217,178,95,.8);border-radius:50%}
+#act{left:50%;transform:translateX(-50%);bottom:calc(env(safe-area-inset-bottom,0px) + 26px);background:#d9b25f;color:#161018;border:0;border-radius:999px;padding:12px 22px;font:500 1rem "Work Sans",sans-serif;cursor:pointer;max-width:90%}
+#start,#panel{inset:0;background:rgba(18,11,7,.82);place-items:center;padding:14px}
+.card{background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:14px;width:min(560px,100%);max-height:100%;overflow:auto;padding:28px}
+.card h1,.card h2{font:700 2.1rem/1.05 "Cormorant Garamond",Georgia,serif;margin:0 0 6px}
+.card h1{font-size:2.6rem}.card p{margin:0 0 10px;max-width:62ch}.card .m{color:var(--dim)}
+.card h4{margin:16px 0 4px;font:500 1rem "Work Sans",sans-serif;color:var(--brass)}
+.card img{float:left;width:92px;height:115px;border-radius:50%/45%;border:3px double var(--brass);margin:0 18px 8px 0;object-fit:cover}
+.card button{margin-top:18px;background:var(--brass);color:#161018;border:0;border-radius:8px;padding:10px 22px;font:500 1rem "Work Sans",sans-serif;cursor:pointer}
+button:focus-visible{outline:3px solid #8fa6e8;outline-offset:2px}
+#hud em{display:block;font:italic 500 .95rem Georgia,serif;color:#d9b25f}

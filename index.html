@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Walk the Museum: The Women Behind Rizal</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Work+Sans:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="c" aria-label="First-person 3D museum. Use WASD to walk and the mouse to look."></canvas>
+<div class="ov" id="hud"><b>The Women Behind Rizal</b><em id="room"></em><span id="seen">Seen 0 of 9 portraits</span></div>
+<canvas class="ov" id="map" width="64" height="180"></canvas>
+<div class="ov" id="cross"></div>
+<button class="ov" id="act"></button>
+<div class="ov" id="start" style="display:grid"><div class="card"><h1>The Women Behind Rizal</h1>
+<p>A small house museum for the 9 portraits of the women who shaped José Rizal (1861–1896). Start in the foyer to read his life in eight moments, then walk three galleries in the order he lived it, each with its own color: Calamba and Manila (1861–1882), Abroad (1882–1891), and Dapitan (1892–1896).</p>
+<p class="m">Walk with W A S D, look with the mouse, turn with the arrow keys, press E near a portrait to read it. On a phone, drag the left side to walk, the right side to look, and tap the button that appears. Portraits are painted impressions, not photographs.</p>
+<button id="go">Enter the museum</button></div></div>
+<div class="ov" id="panel" role="dialog" aria-modal="true"><div class="card" id="card"></div></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/museum.js"></script>
+</body>
+</html>
